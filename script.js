@@ -13,15 +13,16 @@ var char =  prompt("number of characters?");
 // password += upperCase[Math.floor(math.random() * upperCase.length)]
 
 
-password = char;
+// password = char;
 console.log (upperCase.length);
 console.log (lowerCase.length);
 console.log (numbers.length);
+
 var randomUcase = upperCase[Math.floor(Math.random() * upperCase.length) + 1];
 var randomLcase = lowerCase[Math.floor(Math.random() * lowerCase.length) + 1];
 var randomNumber = numbers[Math.floor(Math.random() * numbers.length) + 1];
 
-console.log(randomUcase + randomLcase + randomNumber);
+password = randomUcase + randomLcase + randomNumber;
 // console.log("num", num);
   return password;  
 }
