@@ -16,29 +16,21 @@ function generatePassword(){
 var char =  prompt("number of characters?");
 // characterLength is the length of characters below
 
+newChar = numbers
+// newChar = upperCase + lowerCase + numbers;
+console.log(typeof newChar)
 
-
-newChar = upperCase + lowerCase+ numbers;
-console.log(newChar)
-
-var randomUcase = upperCase[Math.floor(Math.random()* 10 ) + 1];
-var randomLcase = lowerCase[Math.floor(Math.random()* 10 ) + 1];
-var randomNumber = numbers[Math.floor(Math.random()* 10 ) + 1];
-
-
-password += randomUcase;
-password += randomLcase;
-password += randomNumber;
-
+if (char < 128){
 while (char > password.length){
   password += newChar[Math.floor(Math.random() * newChar.length)];
-
-
 }
 
   return password;  
 }
 
+else{
+  return "please use less than 128 characters";
+}}
 // Write password to the #password input
 
 // writePassword function HERE
@@ -54,3 +46,4 @@ function writePassword() {
 // syntax: Element.addEventListener(event, function, useCapture);
 
 generateBtn.addEventListener("click", writePassword);
+console.log(numbers);
