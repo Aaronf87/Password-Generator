@@ -22,9 +22,13 @@ var randomUcase = upperCase[Math.floor(Math.random() * upperCase.length) + 1];
 var randomLcase = lowerCase[Math.floor(Math.random() * lowerCase.length) + 1];
 var randomNumber = numbers[Math.floor(Math.random() * numbers.length) + 1];
 
-password = randomUcase + randomLcase + randomNumber;
+newChar = randomUcase + randomLcase + randomNumber;
 // console.log("num", num);
-  return password;  
+for (let i = 1; i <= char; i++) {
+  console.log(i);
+}
+
+  return newChar;  
 }
 
 // Write password to the #password input
