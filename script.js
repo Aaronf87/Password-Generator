@@ -9,6 +9,8 @@ var generateBtn = document.querySelector("#generate");
 var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","W","X","Y","Z"];
 var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","w","x","y","z"];
 var numbers = [1,2,3,4,5,6,7,8,9,10];
+var symbols  = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '-', '=', '{', '}', '[', ']', '|', '\\', ':', ';', '<', '>', ',', '.', '/', '?'];
+
 var password = "";
 // .length, .random, .floor, for loop, array of numbers,characters,symbols, 
 
@@ -46,4 +48,4 @@ function writePassword() {
 // syntax: Element.addEventListener(event, function, useCapture);
 
 generateBtn.addEventListener("click", writePassword);
-console.log(numbers);
+console.log(symbols);
