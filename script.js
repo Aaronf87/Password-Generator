@@ -1,4 +1,9 @@
 // Assignment Code
+
+// 1. promp the user for the password criteria, a)password length > 128, b)upper case, lower case, numbers, symbols
+// 2. valadate the input
+// 3. generate password
+
 var generateBtn = document.querySelector("#generate");
 
 var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","W","X","Y","Z"];
@@ -10,25 +15,28 @@ var password = "";
 function generatePassword(){
 var char =  prompt("number of characters?");
 // characterLength is the length of characters below
-// password += upperCase[Math.floor(math.random() * upperCase.length)]
 
 
-// password = char;
-console.log (upperCase.length);
-console.log (lowerCase.length);
-console.log (numbers.length);
 
-var randomUcase = upperCase[Math.floor(Math.random() * upperCase.length) + 1];
-var randomLcase = lowerCase[Math.floor(Math.random() * lowerCase.length) + 1];
-var randomNumber = numbers[Math.floor(Math.random() * numbers.length) + 1];
+newChar = upperCase + lowerCase+ numbers;
+console.log(newChar)
 
-newChar = randomUcase + randomLcase + randomNumber;
-// console.log("num", num);
-for (let i = 1; i <= char; i++) {
-  console.log(i);
+var randomUcase = upperCase[Math.floor(Math.random()* 10 ) + 1];
+var randomLcase = lowerCase[Math.floor(Math.random()* 10 ) + 1];
+var randomNumber = numbers[Math.floor(Math.random()* 10 ) + 1];
+
+
+password += randomUcase;
+password += randomLcase;
+password += randomNumber;
+
+while (char > password.length){
+  password += newChar[Math.floor(Math.random() * newChar.length)];
+
+
 }
 
-  return newChar;  
+  return password;  
 }
 
 // Write password to the #password input
