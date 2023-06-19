@@ -1,28 +1,28 @@
 // Assignment Code
 
-// 1. promp the user for the password criteria, a)password length > 128, b)upper case, lower case, numbers, symbols
+// 1. promp the user for the password criteria, 
+// a)password length >= 8 and < 128,
+// b)upper case, lower case, numbers, symbols
 // 2. valadate the input
 // 3. generate password
 
 var generateBtn = document.querySelector("#generate");
-
-var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","W","X","Y","Z"];
-var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","w","x","y","z"];
-var numbers = [1,2,3,4,5,6,7,8,9,10];
-var symbols  = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '-', '=', '{', '}', '[', ']', '|', '\\', ':', ';', '<', '>', ',', '.', '/', '?'];
+// created varables for 
+var upperCase = ["ABCDEFGHIJKLMNOPQRSWXYZ"];
+var lowerCase = ["abcdefghijklmnopqrswxyz"];
+var numbers = ["12345678910"];
+var symbols  = ["!@#$%^&*()_+-={}[]|\:;<>,./?"];
 
 var password = "";
-// .length, .random, .floor, for loop, array of numbers,characters,symbols, 
 
 function generatePassword(){
 var char =  prompt("number of characters?");
 // characterLength is the length of characters below
 
-newChar = numbers
-// newChar = upperCase + lowerCase + numbers;
+newChar = upperCase + lowerCase + numbers + symbols;
 console.log(typeof newChar)
 
-if (char < 128){
+if (char >= 8 && char <= 128){
 while (char > password.length){
   password += newChar[Math.floor(Math.random() * newChar.length)];
 }
@@ -31,7 +31,7 @@ while (char > password.length){
 }
 
 else{
-  return "please use less than 128 characters";
+  return "please use greater than 8 and less than 128 characters";
 }}
 // Write password to the #password input
 
@@ -48,4 +48,3 @@ function writePassword() {
 // syntax: Element.addEventListener(event, function, useCapture);
 
 generateBtn.addEventListener("click", writePassword);
-console.log(symbols);
