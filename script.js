@@ -7,26 +7,30 @@
 // 3. generate password
 
 var generateBtn = document.querySelector("#generate");
-// created varables for 
+// created varables for the password
 var upperCase = ["ABCDEFGHIJKLMNOPQRSWXYZ"];
 var lowerCase = ["abcdefghijklmnopqrswxyz"];
 var numbers = ["12345678910"];
 var symbols  = ["!@#$%^&*()_+-={}[]|\:;<>,./?"];
 
+// staring password is an empty string
 var password = "";
 
+// THIS function is declared to so it may run in writePassword function
 function generatePassword(){
 var char =  prompt("number of characters?");
+
 // characterLength is the length of characters below
 
 newChar = upperCase + lowerCase + numbers + symbols;
 console.log(typeof newChar)
 
+// conditional statement with while loop to create pw under criteria
 if (char >= 8 && char <= 128){
+  // inserted a while loop to return the proper length
 while (char > password.length){
   password += newChar[Math.floor(Math.random() * newChar.length)];
 }
-
   return password;  
 }
 
