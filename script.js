@@ -31,7 +31,7 @@ while (char > password.length){
 }
 
 else{
-  return "please use greater than 8 and less than 128 characters";
+  return "please use 8 characters or greater and 128 characters or less";
 }}
 // Write password to the #password input
 
