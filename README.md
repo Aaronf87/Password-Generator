@@ -1,6 +1,6 @@
 My JavaScript: Password Generator
 
-Hi there!
+Hi there!😃
 
 My password Generator was made to function using JavaScript!  It accepts between 8 up to 128 characters with the combination of symbols, numbers, upper and lower case character.  
 
