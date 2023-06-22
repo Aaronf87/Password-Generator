@@ -16,5 +16,5 @@ https://aaronf87.github.io/password-G/
 
 The following image shows the web application's appearance and functionality:
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+![The Password Generator application displays a red button to "Generate Password".](./Assets/Screen%20Shot%202023-06-21%20at%2010.24.27%20PM.png)
 
