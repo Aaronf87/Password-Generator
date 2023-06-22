@@ -18,7 +18,7 @@ var password = "";
 
 // THIS function is declared to so it may run in writePassword function
 function generatePassword(){
-var char =  prompt("number of characters?");
+var char =  prompt("number of characters? (between 8 and 128)");
 
 // characterLength is the length of characters below
 
