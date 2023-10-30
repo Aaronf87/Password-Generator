@@ -11,7 +11,7 @@ In the future I will be adding more conditons to generate only certain character
 I hope to create more and likely style the app with some distinguishing fun characteristics.
 
 
-https://aaronf87.github.io/password-G/
+[https://aaronf87.github.io/password-G/](https://aaronf87.github.io/Password-Generator/)
 
 
 The following image shows the web application's appearance and functionality:
